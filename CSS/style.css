@@ -1,0 +1,219 @@
+/* 选择器类型 
+<p class="paragraph" id="para1">Lorem</p>
+
+直接选择一类标签
+P{
+    color:red;
+}
+
+选择一个类
+.paragraph{
+    color:red;
+}
+
+选择唯一的一个id，id的赋值应保证独一无二
+#para1{
+    color:red;
+}
+*/
+
+body {
+    background-color:aliceblue;
+    color: #555555;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    font: normal 16px Arial, Helvetica, sans-serif;
+    /* 行高 */
+    line-height: 1.5em;
+}
+
+.box1 {
+    background-color:antiquewhite;
+    color: royalblue;
+    /* 在前面的字体优先选择 */
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.box2 {
+    background-color:bisque;
+    color: royalblue;
+    /* 在前面的字体优先选择 */
+    font-family: Arial, Helvetica, sans-serif;
+    /* 边框 */
+    border: 5px blue solid;
+    border-top: 5px green dotted;
+    border-right: 8px blue solid;
+    border-bottom: 12px firebrick double;
+    border-left: 5px yellowgreen solid;
+
+    border-left-style: dashed ;
+
+    padding-top: 10px;
+    padding-right: 5px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+
+    margin-top: 20px;
+    margin-bottom: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+
+}
+
+.box2 h1 {
+    font-family: 'Times New Roman', Times, serif;
+    color: #555555;
+    font-weight:lighter;
+    font-style: italic;
+    /* 居中 */
+    text-align: center;
+    /* 下划线 */
+    text-decoration: underline;
+    /* 大小写转换 */
+    text-transform: uppercase;
+    /* 字间距 */
+    letter-spacing: 1em;
+    /* 词间距 */
+    word-spacing: 2em;
+}
+.box1 p {
+    margin-top: 5px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+
+    margin:5px 10px 5px 10px;
+
+    margin:5px 10px;
+    /* 上边距、左右边距、下边距 */
+    margin:5px 10px 5px;
+}
+.box1 {
+    border:5px dotted #cccccc;
+    border-radius: 35px;
+    padding:10px;
+    margin: 20px 0px;
+
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+#title1 {
+    font-family: 'Times New Roman', Times, serif;
+    text-align:center;
+}
+.list li {
+    background-color: aquamarine;
+    /* list-style-image: url(/img/SummerPockets.jpg) ; */
+    list-style:circle;
+    width: 30%;
+
+
+}
+
+button{
+    background-color: cadetblue;
+    color: aliceblue;
+    padding: 5px 10px; 
+}
+
+button:hover {
+    background-color: crimson;
+}
+
+button:active {
+    background-color: ghostwhite;
+}
+
+a {
+    text-decoration: none;
+    color: #555555;
+}
+
+a:hover {
+    color: #cccccc;
+}
+
+a:visited {
+    color: beige;
+}
+
+/* 浮动版块 */
+.block {
+    float: left;
+    width: 33.3%;
+    border: 1px dashed;
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+#main-block {
+    float: left;
+    width: 60%;
+    border: 1px dashed;
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+#sidebar {
+    float: right;
+    width: 40%;
+    border: 1px dashed;
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.list2 li:nth-child(even) {
+    background-color:darkgrey;
+}
+
+.list2 li:first-child {
+    background-color: aquamarine;
+}
+
+.list2 li:nth-child(3) {
+    background-color: aqua;
+}
+
+/* 
+Position in CSS
+
+- static 静态定位
+- relative 相对定位
+- absolute 绝对定位
+- fixed 固定定位
+- sticky 
+
+*/
+
+.position-box {
+    width: 500px;
+    height: 500px;
+    border: 5px solid red;
+    position: relative;
+}
+
+.position-box h1 {
+    position: absolute;
+    top: 50px;
+}
+
+.position-box h2 {
+    position: absolute;
+    left: 30px;
+}
+
+#fixed {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+}
